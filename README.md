@@ -16,3 +16,10 @@ cd php-docker-project
 cp .env.example .env
 docker-compose up -d --build
 ```
+
+## コンテナ起動確認
+```bash
+docker-compose exec app php -v
+```
+
+PHP 7.4.9とバージョンが表示されれば成功
